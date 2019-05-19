@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_margin="25dp"
+              android:background="@drawable/button_radius3"
+              android:orientation="vertical"
+>
+
+
+    <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="150dp"/>
+    <TextView
+            android:id="@+id/movieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="Movie Name"
+    />
+
+    <RatingBar
+      android:id="@+id/movieRating"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:stepSize= "0.1"
+      android:isIndicator="true"
+      android:numStars="5"/>
+
+    <TextView
+            android:id="@+id/release_Year"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/genera"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/dismissBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_radius"
+            android:textColor="@color/gray2"
+            android:layout_margin="20dp"
+            android:text="Dismiss"
+            android:textSize="18sp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+    />
+
+
+
+</LinearLayout>
