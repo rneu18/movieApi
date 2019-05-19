@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity(), DataAdapter.Listener  {
         try {
             var myGeneras:String = movieArrayList!![myPosition].genre[0]
             for (x in 1 until movieArrayList!![myPosition].genre.size){
-                myGeneras = myGeneras + "' "+movieArrayList!![myPosition].genre[x]
+                myGeneras = myGeneras + ", "+movieArrayList!![myPosition].genre[x]
             }
             movieName.text = movieArrayList?.get(myPosition)?.title
             releaseYear.text = "Release Year: "+movieArrayList?.get(myPosition)?.releaseYear.toString()
