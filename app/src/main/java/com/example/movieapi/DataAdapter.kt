@@ -19,7 +19,7 @@ class DataAdapter(private val dataList: ArrayList<String>, private val listener:
         holder.bind(dataList[position], listener, position)
     }
 
-    override fun getItemCount(): Int = dataList.count()
+    override fun getItemCount(): Int = dataList.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
